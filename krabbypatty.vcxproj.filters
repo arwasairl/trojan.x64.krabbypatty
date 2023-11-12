@@ -41,6 +41,15 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="ILOVEKRISTIK.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="music.mp3" />
     <Media Include="music.wav">
       <Filter>Resource Files</Filter>
     </Media>

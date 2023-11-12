@@ -3,7 +3,9 @@
 // Used by krabbypatty.rc
 //
 #define IDR_JPG1                        101
-#define IDR_WAVE1                       102
+#define IDR_TXT1                        102
+#define IDR_BIN1                        103
+#define IDR_WAVE1                       104
 
 // Next default values for new objects
 // 
