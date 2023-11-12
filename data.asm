@@ -15,6 +15,15 @@ start:
         mov ds,ax
         mov si,msg          ;SI now holds the message we wanna print
         call print
+        mov ax,13h        
+        int 10h             
+        mov ax,0A000h        
+        mov es,ax             
+        mov ax,32010          
+        mov di,ax             
+        mov dl,4             
+        mov [es:di],dx        
+        int 10h
  
 print:
         push ax
@@ -34,7 +43,7 @@ printchar:
         int 0x10            ;print char
         ret
   
-msg:            db        "You are fucked!", 0
+msg:            db        "Like like like.", 0
 ;----------------------------------------------;
 ; Bootloader signature must be located
 ; at bytes #511 and #512.
