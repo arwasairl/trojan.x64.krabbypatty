@@ -159,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="F6ApscYboAInDCa.jpg" />
+    <Image Include="img.bmp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ILOVEKRISTIK.txt" />
@@ -167,7 +168,6 @@
     <None Include="data.bin" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="music.mp3" />
     <Media Include="music.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

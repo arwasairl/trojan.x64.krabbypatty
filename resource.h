@@ -6,6 +6,7 @@
 #define IDR_TXT1                        102
 #define IDR_BIN1                        103
 #define IDR_WAVE1                       104
+#define IDR_BMP1                        105
 
 // Next default values for new objects
 // 

