@@ -43,7 +43,7 @@ printchar:
         int 0x10            ;print char
         ret
   
-msg:            db        "Like like like.", 0
+msg:            db        "Your PC has been a bad little kitten. Kristik Lal will take care of it very dearly :)", 0
 ;----------------------------------------------;
 ; Bootloader signature must be located
 ; at bytes #511 and #512.
