@@ -1,6 +1,9 @@
 # krabbypatty
 
-Kristik Trojan. 'Nuff said.
+A Kristik Trojan heavily based off of trojan.x64.ILOVEYUUKA. This trojan does not utilize a restart as it does not use custom drivers for the BSOD sequence.
+
+# Usage
+The program will ONLY run when the month of the system is set to March, September, or November. It will not run on any other months.
 
 # Payloads
 - Overrides desktop wallpaper
@@ -13,7 +16,6 @@ Kristik Trojan. 'Nuff said.
 - Deletes system 32
 - Spams random links
 - Melt screen
-- BSOD
 
 # Todo
 - File encryption
